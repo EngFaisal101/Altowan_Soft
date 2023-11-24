@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<title>مؤسسة التعاون سوفت</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+<style>
+body,h1,h2,h3,h4,h5 {font-family: 'Cairo', sans-serif;}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+ 
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+
+}
+</style>
+</head>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-right w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+<a href="#" style="text-decoration: none;">
+  <h3 class="w3-padding-64 w3-center"><b>التعاون<br>سوفت</b></h3></a>
+<!--
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>-->
+
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">الصفحة الرئيسية</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">خدماتنا</a>
+<!--
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">اعمالنا</a>-->
+  <a href="#about_us" onclick="w3_close()" class="w3-bar-item w3-button">من نحن؟</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">اتصل بنا</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+<a href="#" style="text-decoration: none;">
+  <span class="w3-left w3-padding"><b class="w3-text-red">التعاون</b> سوفت</span></a>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<!-- Header -->
+opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b class="w3-text-red">Altawon</b>Soft</h1>
+
+ 
+  <p><b>مؤسسة التعاون سوفت  لتطوير الأنظمة ومواقع الويب وخدمات التصاميم.</b></p>
+  <p class="w3-padding-16">
+</header>
+
+  
+<!-- swoat Section -->
+<div class="w3-container w3-padding-64 w3-light-grey w3-center w3-animate-bottom">
+ <div class="w3-padding-16 w3-center"><span class="w3-xxxlarge w3-border-red w3-bottombar w3-text-red" style="font-weight: bold;">قوة الثقة </span></div>
+  <p>نحن نستلهم ثقتنا من مواهبنا وقدراتنا.</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+  <img src="images/team3.png" style="width:70px;">
+      <p>ابداع</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heartbeat w3-text-red w3-jumbo"></i>
+      <p>تحليلات</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-group w3-text-yellow w3-jumbo"></i>
+      <p>دعم كبير</p>
+   </div>
+    <div class="w3-col s3">
+      <i class="fa fa-desktop w3-text-green w3-jumbo"></i>
+      <p>رؤى</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+  <img src="images/team2.png" style="width:70px">
+      <p>الكفاءة</p>
+    </div>
+    <div class="w3-col s3">
+  <img src="images/team1.png" style="width:70px">
+      <p>المصداقية</p>
+    </div>
+    <div class="w3-col s3">
+  <img src="images/team.png" style="width:70px">
+      <p>التعاون</p>
+</div>
+    <div class="w3-col s3">
+  <img src="images/team4.png" style="width:70px">
+      <p>الإنجاز</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- source Section -->
+<div class="w3-container w3-padding-64 w3-light-grey w3-center w3-margin-top">
+ <div class="w3-padding-16 w3-center"><span class="w3-xxxlarge w3-border-red w3-bottombar w3-text-red" style="font-weight: bold;">مصدر الثقة</span></div>
+  <p>مصدر ثقتنا هي من عملائنا .</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+ <svg viewBox="0 0 36 36" class="circular-chart green">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="100, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">100%</text>
+</svg> 
+      <p>مصدر نجاح مشاريعك</p>
+    </div>
+    <div class="w3-col s3">
+ <svg viewBox="0 0 36 36" class="circular-chart orange">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">95%</text>
+</svg> 
+      <p>موظف متعاون</p>
+    </div>
+    <div class="w3-col s3">
+<svg viewBox="0 0 36 36" class="circular-chart blue">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">90%</text>
+</svg> 
+      <p>استشارات تقنية</p>
+</div>
+    <div class="w3-col s3">
+<svg viewBox="0 0 36 36" class="circular-chart green">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="100, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">100%</text>
+</svg> 
+      <p>مشروع تقني</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red w3-center"><b>خدماتنا.</b></h1>
+    <hr style="width:50px;border:5px solid red;margin-right:40%" class="w3-round">
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third w3-margin-top">
+  <div class=" w3-card-2 w3-container" style="min-height:350px">
+  <h3>  <p>دراسة وتخطيط تقني.</h3><br>
+  <img src="images/icon-1.svg" style="width:50px">
+  <p>الكثير يحتاج دراسات وخطط تقنية لمعرفة تفاصيل أكثر عن أفكارهم وتخطي العقبات، لذلك نحن نقدم لك أجود الدراسات لتتمكن من معرفة كافة جوانب مشروعك</p>
+  </div>
+</div>
+
+<div class="w3-third w3-margin-top">
+  <div class="w3-card-2 w3-container" style="min-height:350px">
+  <h3> برمجة مواقع الكترونية</h3><br>
+  <img src="images/icon-2.svg" style="width:50px">
+<p>برمجة و تصميم مواقع لتتناسب مع احتياجاتك وتحقيق طموحاتك سواء كانت واجهة تعريفية، متجر الكتروني، إدارة موارد بشرية، ادارة عملاء وغيره من المشاريع</p>
+  </div>
+</div>
+<div class="w3-third w3-margin-top">
+  <div class="w3-card-2 w3-container" style="min-height:350px">
+  <h3> برمجة تطبيقات سطح المكتب</h3><br>
+  <img src="images/icon-2.svg" style="width:50px">
+<p>برمجة و تصميم تطبيقات سطح المكتب لمشروعك، علما بأن لدينا مطورين متمرسين في برمجة تطبيقات سطح المكتب وتركيزهم على تحويل مشروعك وافكارك إلى تطبيقات بجودة عالية ومستدامة.</p>
+
+  </div>
+</div>
+<div class="w3-third w3-margin-top">
+  <div class="w3-card-2 w3-container" style="min-height:350px">
+  <h3>دعم فني وصيانة </h3><br>
+  <img src="images/icon-4.svg" style="width:50px">
+<p>نسعى بأن نرافقك خلال رحلتك الى النجاح بتوفير لك دعم فني وخدمة عملاء وصيانة متكاملة لمشروعك التقني
+شركة ادارة مشاريع تقنية</p>
+  </div>
+</div>
+<div class="w3-third w3-margin-top">
+  <div class="w3-card-2 w3-container" style="min-height:350px">
+  <h3> استشارات تقنية</h3><br>
+  <img src="images/icon-6.svg" style="width:50px">
+<p>نحرص في مؤسسة التعاون سوفت أن نقدم لك استشارات ونصائح تقنية كعميل لدينا لتكون في المسار الصحيح وهذا من أهم اهدافنا، التوجيه والإرشاد.</p>
+  </div>
+</div>
+  </div>
+
+
+<!-- Features Section -->
+<!--
+<div class="w3-container w3-padding-64 w3-white w3-center w3-margin-top">
+ <div class="w3-padding-16 w3-center"><span class="w3-xxxlarge w3-border-red w3-bottombar w3-text-red" style="font-weight: bold;">أعمالنا</span></div>
+  <p>مصدر ثقتنا هي من عملائنا .</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
+      <p>مصدر نجاح مشاريعك</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+      <p>موظف متعاون</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+      <p>استشارات تقنية</p>
+</div>
+    <div class="w3-col s3">
+      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+      <p>مشروع تقني</p>
+    </div>
+  </div>
+</div>
+-->
+  <!-- Designers -->
+  <div class="w3-container" id="about_us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red w3-center"><b>من نحنُ؟</b></h1>
+ <hr style="width:50px;border:5px solid red;margin-right:40%" class="w3-round">
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-card-2">
+ <img src="images/about1.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-text-red">اهدافك هي اهدافنا</h3>
+          <p>مؤسسة التعاون سوفت  تجمع مختصين بمجالات عدة لتمكين قدراتهم على ان نحقق نجاح مشاريع العملاء وجعل مشاريعهم متصدره بين المنافسين لتكون الأفضل وبهذا فنحن نعزز شعارنا؛ واقعنا تطبيق حلمك</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-card-2">
+        <img src="images/about2.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-text-red">نسعى لنكون وجهتك الأولى</h3>
+          <p>لكوننا روّاد التقنية، فنحن نسعى بأن يكون كل عميل لنا رائد في مجاله والنهوض بمشروعه الى آفاق النجاح وأن نكون الوجهة الأولى له في تقنية المعلومات كما نطمح أن نتصدّر دائمًا كأفضل شركة برمجة في اليمن.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-card-2">
+        <img src="images/about3.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-text-red">قيّمون بقيّمنا</h3>
+          <p>حرصنا على أن يكون فريق عملنا يحظى بالقيم السامية التي نؤمن بها واهمها الشفافية والثقة، والارتقاء بالجودة، والالتزام. وكل هذا فقط لنقدم لك خدمات التقنية بجودة عالية وخصوصة تامة مما يجعلنا من أفضل شركات البرمجة في آليات العمل.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Contact -->
+  <div class="w3-container w3-row-padding w3-center" id="contact" style="margin-top:75px">
+ <div class="w3-padding-16 w3-center"><span class="w3-xxxlarge w3-border-red w3-bottombar w3-text-red" style="font-weight: bold;">اتصل بنا</span></div>
+<!-- Contact Container -->
+<div class=" w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Altawon_Soft@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>اليمن ، حجة</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>779289621 (967+)</p>
+      </div>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey  w3-container w3-padding-32 w3-center" style="margin-top:75px;padding-right:58px">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+<p class="w3-center">مؤسسة التعاون سوفت لتطوير الأنظمة <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">&copy; Altawon Soft</a></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
